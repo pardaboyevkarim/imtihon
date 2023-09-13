@@ -1,0 +1,198 @@
+.reviews {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.reviews__wrapper {
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.reviews__topminwrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.reviews___topmintext {
+  font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #1A202C;
+    margin-right: 12px;
+}
+
+.reviews__top-button {
+  border-radius: 4px;
+  background-color: #3563E9;
+  font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 20px;
+    line-height: normal;
+    color: #fff;
+    border: none;
+}
+
+.reviews__wrapper-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  &::before {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background-image: url("../../images/header-img.png");
+      background-size: cover;
+      margin-right: 8px;
+    content: "";
+  }
+}
+
+
+.reviews__strong {
+  font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.6px;
+    color: #1A202C;
+    margin-bottom: 8px;
+}
+
+.reviews__mintex {
+  font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.28px;
+    color: #90A3BF;
+}
+.reviews__time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
+    font-style: normal;
+    margin-left: auto;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.28px;
+    color: #90A3BF;
+    &::after {
+      display: inline-block;
+      width: 108px;
+      height: 20px;
+      background-image: url("../../images/sportsicon.svg");
+      margin-top: 8px;
+      content: "";
+    }
+    
+}
+.reviews__text {
+  font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: -0.28px;
+    color: #90A3BF;
+    margin-bottom: 24px;
+    margin-left: 64px;
+}
+
+.reviews__wrapper-bottom {
+  display: flex;
+    align-items: center;
+  margin-bottom: 16px;
+    &::before {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-image: url("../../images/recentimg.png");
+      background-repeat: no-repeat;
+      margin-right: 8px;
+      content: "";
+    }
+}
+
+.reviews__link {
+  display: block;
+  width: 132px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+    font-style: normal;
+    padding: 10px 20px;
+    font-weight: 600;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: -0.32px;
+    color: #90A3BF;
+    text-decoration: none;
+    &::after {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url("../../images/reviewsicon.svg");
+      background-repeat: no-repeat;
+      margin-left: 6px;
+      content: "";
+    }
+}
+.reviews__link:hover {
+  color: #1A202C;
+}
+.reviews__link:active {
+  background-color: #D6E4FD;
+}
+.reviews__link:hover::after {
+  color: #1A202C;
+}
+.reviews__top-button:active {
+background-color: #1A37A7;
+}
+@media only screen and (max-width: 600px) {
+  .reviews__wrapper {
+    padding: 0;
+  }
+  .reviews__wrapper-top::before {
+      width: 44px;
+      height: 44px;
+      background-size: cover;
+    }
+  .reviews__wrapper-bottom::before {
+width: 44px;
+height: 44px;
+    background-size: cover;
+  }
+  .reviews__strong {
+          font-size: 16px;
+  }
+  .reviews__mintex {
+          font-size: 12px;
+  }
+  .reviews__time {
+          font-size: 12px;
+  }
+  .reviews__span {
+    display: none;
+  }
+    .reviews__link {
+      font-size: 14px;
+    }
+        .reviews__text {
+      font-size: 12px;
+        }
+        
+  .reviews__link::after {
+    width: 76px;
+    height: 12px;
+    background-size: cover;
+                }
+}

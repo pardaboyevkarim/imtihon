@@ -1,0 +1,200 @@
+@use "../mixsin";
+.wrapper {
+  overflow: hidden;
+}
+.car__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  @include mixsin.list; 
+  overflow-x: scroll;
+}
+.car__item-link {
+  display: block;
+  
+}
+.car__item {
+  width: 304px;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.car__top-minwrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.car__title {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+  color: #1A202C;
+  margin-bottom: 4px;
+}
+
+.car__top-text {
+  font-size: 14px;
+  line-height: 150%;
+  /* 21px */
+  letter-spacing: -0.28px;
+  color: #90A3BF;
+}
+.car__item:nth-child(2) .car__senter-minwrapper::before {
+  background-image: url("../../images/car1.png");
+}
+.car__item:nth-child(3) .car__senter-minwrapper::before {
+  background-image: url("../../images/car3.png");
+}
+.car__item:nth-child(4) .car__senter-minwrapper::before {
+  background-image: url("../../images/car1.png");
+}
+.car__senter-minwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  &::before {
+    display: inline-block;
+    width: 232px;
+    height: 72px;
+    background-image: url("../../images/car2.png");
+    background-repeat: no-repeat;
+    margin-bottom: 64px;
+    content: "";
+  }
+ 
+}
+.car__lisnk {
+  color: transparent;
+}
+.car__lisnk:hover {
+  color: red;
+}
+
+.car__senter-list {
+  @include mixsin.list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 255px;
+  gap: 16px;
+}
+
+.car__senter-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #90A3BF;
+  &::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/carti-icon1.svg");
+    background-repeat: no-repeat;
+    margin-right: 6px;
+    content: "";
+  }
+  &:nth-child(2)::before {
+    background-image: url("../../images/Carti-icontou.svg");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../../images/carti-iconfree.svg");
+  }
+}
+
+.car__bottom-minwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car__bottom-mintext {
+  width: 116px;
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.car__strong {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #1A202C;
+}
+
+.car__bottom-minlink {
+  border-radius: 4px;
+  background-color: #3563E9;
+  font-weight: 600;
+  padding: 10px 20px;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: -0.32px;
+  color: #fff;
+  text-decoration: none;
+}
+.car__bottom-span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #90A3BF;
+}
+.car__bottom-minlink:active {
+  background-color: #1A202C;
+}
+
+@media only screen and (max-width: 600px) {
+  .car__item {
+    width: 240px;
+    padding: 16px;
+  }
+  .car__title {
+    font-size: 16px;
+  }
+  .car__top-text {
+    font-size: 12px;
+  }
+  .car__senter-minwrapper::before {
+    width: 180px;
+    height: 58px;
+    background-size: cover;
+  }
+  .car__senter-item {
+    font-size: 12px;
+  }
+  
+  .car__senter-item::before {
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+  }
+  .car__senter-list {
+    width: 240px;
+    justify-content: flex-start;
+  }
+  .car__bottom-mintext {
+    width: 100px;
+    font-size: 12px;
+  }
+  .car__strong {
+    font-size: 16px;
+  }
+  .car__bottom-span {
+    font-size: 12px;
+  }
+  .car__bottom-minlink {
+    font-size: 12px;
+  }
+}
